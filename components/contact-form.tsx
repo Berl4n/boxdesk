@@ -520,11 +520,11 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione um plano" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="plano-1">Plano 1</SelectItem>
-                          <SelectItem value="plano-2">Plano 2</SelectItem>
-                          <SelectItem value="plano-3">Plano 3</SelectItem>
-                          <SelectItem value="plano-4">Plano 4</SelectItem>
-                          <SelectItem value="plano-5">Plano 5</SelectItem>
+                          <SelectItem value="plano-1">Netway Turbo Ultra Vel. Ilimitada </SelectItem>
+                          <SelectItem value="plano-2">Netway Turbo Start Vel. Ilimitada</SelectItem>
+                          <SelectItem value="plano-3">Netway Turbo Max Vel. Ilimitada</SelectItem>
+                          <SelectItem value="plano-4">Netway Flex 340 Mbps </SelectItem>
+                          <SelectItem value="plano-5">Netway Essencial 340 Mbps</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -537,12 +537,12 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione os dias" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="5">5 dias</SelectItem>
-                          <SelectItem value="10">10 dias</SelectItem>
-                          <SelectItem value="15">15 dias</SelectItem>
-                          <SelectItem value="20">20 dias</SelectItem>
-                          <SelectItem value="25">25 dias</SelectItem>
-                          <SelectItem value="30">30 dias</SelectItem>
+                          <SelectItem value="5">Dia 5 </SelectItem>
+                          <SelectItem value="10">Dia 10 </SelectItem>
+                          <SelectItem value="15">Dia 15 </SelectItem>
+                          <SelectItem value="20">Dia 20 </SelectItem>
+                          <SelectItem value="25">Dia 25 </SelectItem>
+                          <SelectItem value="30">Dia 30 </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -858,11 +858,11 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione um plano" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="plano-1">Plano 1</SelectItem>
-                          <SelectItem value="plano-2">Plano 2</SelectItem>
-                          <SelectItem value="plano-3">Plano 3</SelectItem>
-                          <SelectItem value="plano-4">Plano 4</SelectItem>
-                          <SelectItem value="plano-5">Plano 5</SelectItem>
+                          <SelectItem value="plano-1">Netway Empresarial 1Giga</SelectItem>
+                          <SelectItem value="plano-2">Netway Empresarial 700Mbps</SelectItem>
+                          <SelectItem value="plano-3">Netway Empresarial 500Mbps</SelectItem>
+                          <SelectItem value="plano-4">Netway Empresarial 300Mbps</SelectItem>
+                          
                         </SelectContent>
                       </Select>
                     </div>
@@ -875,12 +875,12 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione os dias" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="5">5 dias</SelectItem>
-                          <SelectItem value="10">10 dias</SelectItem>
-                          <SelectItem value="15">15 dias</SelectItem>
-                          <SelectItem value="20">20 dias</SelectItem>
-                          <SelectItem value="25">25 dias</SelectItem>
-                          <SelectItem value="30">30 dias</SelectItem>
+                          <SelectItem value="5">Dia 5 </SelectItem>
+                          <SelectItem value="10">Dia 10 </SelectItem>
+                          <SelectItem value="15">Dia 15 </SelectItem>
+                          <SelectItem value="20">Dia 20 </SelectItem>
+                          <SelectItem value="25">Dia 25 </SelectItem>
+                          <SelectItem value="30">Dia 30 </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
