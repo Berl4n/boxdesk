@@ -520,11 +520,11 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione um plano" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="plano-1">Netway Turbo Ultra Vel. Ilimitada </SelectItem>
-                          <SelectItem value="plano-2">Netway Turbo Start Vel. Ilimitada</SelectItem>
-                          <SelectItem value="plano-3">Netway Turbo Max Vel. Ilimitada</SelectItem>
-                          <SelectItem value="plano-4">Netway Flex 340 Mbps </SelectItem>
-                          <SelectItem value="plano-5">Netway Essencial 340 Mbps</SelectItem>
+                          <SelectItem value="Netway Turbo Ultra Vel. Ilimitada">Netway Turbo Ultra Vel. Ilimitada </SelectItem>
+                          <SelectItem value="Netway Turbo Start Vel. Ilimitada">Netway Turbo Start Vel. Ilimitada</SelectItem>
+                          <SelectItem value="Netway Turbo Max Vel. Ilimitada">Netway Turbo Max Vel. Ilimitada</SelectItem>
+                          <SelectItem value="Netway Flex 340 Mbps">Netway Flex 340 Mbps </SelectItem>
+                          <SelectItem value="Netway Essencial 340 Mbps">Netway Essencial 340 Mbps</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -858,10 +858,10 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione um plano" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="plano-1">Netway Empresarial 1Giga</SelectItem>
-                          <SelectItem value="plano-2">Netway Empresarial 700Mbps</SelectItem>
-                          <SelectItem value="plano-3">Netway Empresarial 500Mbps</SelectItem>
-                          <SelectItem value="plano-4">Netway Empresarial 300Mbps</SelectItem>
+                          <SelectItem value="Netway Empresarial 1Giga">Netway Empresarial 1Giga</SelectItem>
+                          <SelectItem value="Netway Empresarial 700Mbps">Netway Empresarial 700Mbps</SelectItem>
+                          <SelectItem value="Netway Empresarial 500Mbps">Netway Empresarial 500Mbps</SelectItem>
+                          <SelectItem value="Netway Empresarial 300Mbps">Netway Empresarial 300Mbps</SelectItem>
                           
                         </SelectContent>
                       </Select>
