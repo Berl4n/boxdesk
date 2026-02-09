@@ -196,7 +196,7 @@ export function ContactForm() {
     } finally {
       setIsSubmitting(false)
       setSubmitted(true)
-      
+
       // Limpar os campos do formulário
       setPfData({
         nome: "",
