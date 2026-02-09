@@ -174,7 +174,7 @@ export function ContactForm() {
     try {
       const data = personType === "pf" ? pfData : pjData
       
-      const response = await fetch("https://boxdesk.app.n8n.cloud/webhook/contato/f2", {
+      const response = await fetch("https://boxdesk.app.n8n.cloud2/webhook/contato/f", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -196,6 +196,55 @@ export function ContactForm() {
     } finally {
       setIsSubmitting(false)
       setSubmitted(true)
+      
+      // Limpar os campos do formulário
+      setPfData({
+        nome: "",
+        cpf: "",
+        rg: "",
+        dataNascimento: "",
+        cep: "",
+        endereco: "",
+        numero: "",
+        complemento: "",
+        bairro: "",
+        cidade: "",
+        estado: "",
+        pontoReferencia: "",
+        telefone: "",
+        email: "",
+        plano: "",
+        vencimento: "",
+        formaContato: "ligacao",
+        horario: "manha",
+        comentarios: "",
+      })
+      
+      setPjData({
+        cnpj: "",
+        razaoSocial: "",
+        nomeFantasia: "",
+        cep: "",
+        endereco: "",
+        numero: "",
+        complemento: "",
+        bairro: "",
+        cidade: "",
+        estado: "",
+        pontoReferencia: "",
+        responsavel: "",
+        cpf: "",
+        rg: "",
+        cargo: "",
+        telefone: "",
+        email: "",
+        plano: "",
+        vencimento: "",
+        formaContato: "ligacao",
+        horario: "manha",
+        comentarios: "",
+      })
+      
       setTimeout(() => setSubmitted(false), 3000)
     }
   }
