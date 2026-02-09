@@ -174,7 +174,7 @@ export function ContactForm() {
     try {
       const data = personType === "pf" ? pfData : pjData
       
-      const response = await fetch("https://boxdesk.app.n8n.cloud2/webhook/contato/f2", {
+      const response = await fetch("https://boxdesk.app.n8n.cloud/webhook/contato/f2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
