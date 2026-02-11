@@ -964,7 +964,7 @@ export function ContactForm() {
               type="button"
               variant="outline"
               className="flex-1 h-12 text-base font-medium border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-md bg-transparent"
-              onClick={() => window.open("https://1550.3cx.cloud/boxdesk/", "_blank")}
+              onClick={() => window.open("https://api.whatsapp.com/send?1=pt_BR&phone=5581995588779", "_blank")}
             >
               <svg
                 className="w-5 h-5 mr-2"
