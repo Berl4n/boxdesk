@@ -569,7 +569,7 @@ export function ContactForm() {
                           <SelectValue placeholder="Selecione um plano" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="Netway Turbo Ultra Vel. Ilimitada">Netway Turbo Ultra Vel. Ilimitada R$ 169,99 MÊS  </SelectItem>
+                          <SelectItem value="Netway Turbo Ultra Vel. Ilimitada">Netway Turbo Ultra Vel. Ilimitada R$ 169,90 MÊS  </SelectItem>
                           <SelectItem value="Netway Turbo Start Vel. Ilimitada">Netway Turbo Start Vel. Ilimitada R$ 99,90 MÊS</SelectItem>
                           <SelectItem value="Netway Turbo Max Vel. Ilimitada">Netway Turbo Max Vel. Ilimitada R$ 129,90 MÊS</SelectItem>
                           <SelectItem value="Netway Flex 340 Mbps">Netway Flex 340 Mbps R$ 99,90 MÊS</SelectItem>
