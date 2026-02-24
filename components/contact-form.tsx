@@ -530,7 +530,7 @@ export function ContactForm() {
                       </Label>
                       <Input
                         id="pf-telefone"
-                        placeholder="(00) 00000-0000"
+                        placeholder="(00) 000000000"
                         value={pfData.telefone}
                         onChange={(e) => setPfData({ ...pfData, telefone: formatPhone(e.target.value) })}
                         className="bg-card"
