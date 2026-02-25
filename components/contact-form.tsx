@@ -78,8 +78,24 @@ export function ContactForm() {
     horario: "manha",
     comentarios: "",
   })
+  const formatCpf = (value: string) => {
+  const numbers = value.replace(/\D/g, "").slice(0, 11)
 
-  const formatCep = (value: string) => {
+  if (numbers.length <= 3) return numbers
+  if (numbers.length <= 6) return `${numbers.slice(0, 3)}.${numbers.slice(3)}`
+  if (numbers.length <= 9) return `${numbers.slice(0, 3)}.${numbers.slice(3, 6)}.${numbers.slice(6)}`
+  
+  return `${numbers.slice(0, 3)}.${numbers.slice(3, 6)}.${numbers.slice(6, 9)}-${numbers.slice(9, 11)}`
+}
+const formatBirthDate = (value: string) => {
+  const numbers = value.replace(/\D/g, "").slice(0, 8) // máximo 8 dígitos
+
+  if (numbers.length <= 2) return numbers
+  if (numbers.length <= 4) return `${numbers.slice(0, 2)}/${numbers.slice(2, 4)}`
+  
+  return `${numbers.slice(0, 2)}/${numbers.slice(2, 4)}/${numbers.slice(4, 8)}` // Formato DD/MM/AAAA
+}
+  function formatCep(value: string) {
     const numbers = value.replace(/\D/g, "")
     if (numbers.length <= 5) return numbers
     return `${numbers.slice(0, 5)}-${numbers.slice(5, 8)}`
@@ -360,7 +376,7 @@ export function ContactForm() {
                         id="pf-cpf"
                         placeholder="000.000.000-00"
                         value={pfData.cpf}
-                        onChange={(e) => setPfData({ ...pfData, cpf: e.target.value })}
+                        onChange={(e) => setPfData({ ...pfData, cpf: formatCpf(e.target.value) })}
                         className="bg-card"
                       />
                     </div>
@@ -380,13 +396,17 @@ export function ContactForm() {
                       <Label htmlFor="pf-nascimento" className="text-foreground">
                         Data de Nascimento
                       </Label>
-                      <Input
-                        id="pf-nascimento"
-                        type="date"
-                        value={pfData.dataNascimento}
-                        onChange={(e) => setPfData({ ...pfData, dataNascimento: e.target.value })}
-                        className="bg-card"
-                      />
+                    <Input
+  type="text"
+  maxLength={10}
+  value={pfData.dataNascimento || ""}
+  onChange={(e) =>
+    setPfData({
+      ...pfData,
+      dataNascimento: formatBirthDate(e.target.value),
+    })
+  }
+/>
                     </div>
                   </div>
                 </div>
@@ -435,11 +455,11 @@ export function ContactForm() {
                       className="bg-card"
                     />
                   </div>
-
+                        
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="pf-numero" className="text-foreground">
-                        Número
+                      Número
                       </Label>
                       <Input
                         id="pf-numero"
@@ -447,7 +467,7 @@ export function ContactForm() {
                         value={pfData.numero}
                         onChange={(e) => setPfData({ ...pfData, numero: e.target.value })}
                         className="bg-card"
-                        required
+                        required 
                       />
                     </div>
                     <div className="space-y-2">
