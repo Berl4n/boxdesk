@@ -88,12 +88,20 @@ export function ContactForm() {
   return `${numbers.slice(0, 3)}.${numbers.slice(3, 6)}.${numbers.slice(6, 9)}-${numbers.slice(9, 11)}`
 }
 const formatBirthDate = (value: string) => {
-  const numbers = value.replace(/\D/g, "").slice(0, 8) // máximo 8 dígitos
+  const numbers = value.replace(/\D/g, "").slice(0, 8)
 
-  if (numbers.length <= 2) return numbers
-  if (numbers.length <= 4) return `${numbers.slice(0, 2)}/${numbers.slice(2, 4)}`
-  
-  return `${numbers.slice(0, 2)}/${numbers.slice(2, 4)}/${numbers.slice(4, 8)}` // Formato DD/MM/AAAA
+  // YYYY
+  if (numbers.length <= 4) return numbers
+
+  // YYYY-MM
+  if (numbers.length <= 6)
+    return `${numbers.slice(0, 4)}-${numbers.slice(4)}`
+
+  // YYYY-MM-DD
+  if (numbers.length <= 8)
+    return `${numbers.slice(0, 4)}-${numbers.slice(4, 6)}-${numbers.slice(6, 8)}`
+
+  return numbers
 }
   function formatCep(value: string) {
     const numbers = value.replace(/\D/g, "")
@@ -407,6 +415,7 @@ const formatBirthDate = (value: string) => {
     })
   }
 />
+
                     </div>
                   </div>
                 </div>
