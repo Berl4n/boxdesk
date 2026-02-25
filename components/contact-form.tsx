@@ -407,6 +407,7 @@ const formatBirthDate = (value: string) => {
                     <Input
   type="text"
   maxLength={10}
+  placeholder="ANO-MM-DD"
   value={pfData.dataNascimento || ""}
   onChange={(e) =>
     setPfData({
