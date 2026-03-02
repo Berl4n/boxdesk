@@ -23,6 +23,7 @@ interface AddressData {
   localidade: string
   uf: string
   erro?: boolean
+  numero?: string
 }
 
 export function ContactForm() {
